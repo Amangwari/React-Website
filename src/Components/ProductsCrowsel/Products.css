@@ -1,0 +1,150 @@
+.product-category-section {
+    padding: 3rem 0;
+    background-color: white;
+}
+
+.product-category-section h2 {
+    /* padding: 2rem; */
+    font-weight: 700;
+    text-align: center;
+
+}
+
+.img-extra {
+    padding: 0;
+    margin: 0 1rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.img-extra img {
+    width: 150px;
+    height: auto;
+}
+
+
+.product {
+    margin: 1rem auto;
+    width: 260px;
+    /* height: auto; */
+
+    height: 340px;
+
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+    padding: 1rem 0;
+    background-color: #ffff;
+
+}
+
+.product img {
+    width: 125px;
+    /* height: auto; */
+    height: 150px;
+    cursor: pointer;
+}
+
+.product-details {
+    margin: 0 5px;
+}
+
+
+.product .weight {
+    border: 2px solid #faa419;
+    border-radius: 5px;
+    padding: 5px 10px;
+    font-size: 13px;
+    display: flex;
+    align-items: flex-start;
+    width: 56px;
+    color: #f90;
+    font-weight: bold;
+
+}
+
+.product h5 {
+    font-weight: 500;
+    font-size: 18px;
+}
+
+.price {
+    display: flex;
+    gap: 1rem;
+}
+
+.product .priceee {
+    color: #faa419;
+    font-weight: 800;
+    font-size: 1.2rem;
+    align-items: flex-start;
+    display: flex;
+}
+
+.star-rating {
+    display: flex;
+    flex-direction: row-reverse;
+    /* font-size:1.5em; */
+    justify-content: space-around;
+    /* padding:0 .2em; */
+    padding: 0px 3px 0px 5.2px;
+    text-align: center;
+    width: 5em;
+}
+
+.star-rating input {
+    display: none;
+}
+
+.star-rating label {
+    color: #ccc;
+    cursor: pointer;
+}
+
+.star-rating :checked~label {
+    color: #f90;
+}
+
+
+.product #review {
+    font-weight: 500;
+    color: #c3c3c3;
+}
+
+.button-product {
+    background-color: #202020;
+    color: white;
+    border: none;
+    padding: 4px 10px;
+    border-radius: 40px;
+}
+
+.button-product:hover {
+    color: #f90;
+}
+
+.icon-cart {
+    margin: 0px 7px 4px 7px;
+}
+
+
+/* Ratings */
+
+.rating-box {
+    display: flex;
+}
+
+
+/* Media Queries */
+
+@media only screen and (max-width: 800px) {
+    .imgsss .img-1, .img-3 {
+        display: none;
+    }
+
+    .imgsss .img-2 {
+        width: 100px;
+    }
+}

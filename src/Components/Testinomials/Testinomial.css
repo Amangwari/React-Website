@@ -1,0 +1,26 @@
+.testinomia-section {
+    margin: 1rem;
+}
+.testinomia-section h2{
+    text-align: center;
+    font-weight: 700;
+    padding: 1rem;
+}
+
+.test-details {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.quote-txt{
+    color: #FAA419;
+    font-size: 2rem;   
+}
+
+.about-test{
+    display: flex;
+    flex-direction: column;
+    margin-left: 1rem;
+}

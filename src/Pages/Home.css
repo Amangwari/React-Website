@@ -1,0 +1,490 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&family=Heebo:wght@700;800&display=swap');
+
+/* hero banner */
+
+.hero-banner {
+    position: relative;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: 50% 50%;
+    width: 100%;
+    /* height: 423px; */
+    display: inline-block;
+    position: relative;
+    margin-top: 0px;
+}
+
+
+.hero-banner img {
+    width: 100%;
+    height: auto;
+}
+
+
+
+.banner-txt {
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 4rem;
+    margin-top: 19rem;
+}
+
+.banner-txt h1 {
+    color: #ffff;
+    font-size: 4rem;
+    font-weight: 500;
+}
+
+.banner-txt h3 {
+    color: #ffff;
+    font-family: 'Dancing Script', cursive;
+    font-weight: 600;
+    font-size: 2rem;
+}
+
+.banner-txt h4 {
+    color: #faa419;
+}
+
+.banner-btn {
+    border: none;
+    background-color: #faa419;
+    color: #691719;
+    padding: 1rem 2rem;
+    font-weight: 700;
+    font-size: 1.5rem;
+    border-radius: 5px;
+}
+
+
+
+.content-main {
+    width: 100%;
+    position: relative;
+    margin: auto;
+    display: flex;
+    background-color: #faa419;
+    justify-content: center;
+
+}
+
+
+
+.content-main .content-box {
+    height: auto;
+    overflow: hidden;
+    padding: 4rem;
+    background: #faa419;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.05);
+    width: 100%;
+
+}
+
+.content-main .content-box:before,
+.content-main .content-box:after {
+    content: "";
+    height: 2px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    clip-path: polygon(0% 0%, 5% 100%, 10% 0%, 15% 100%, 20% 0%, 25% 100%, 30% 0%, 35% 100%, 40% 0%, 45% 100%, 50% 0%, 55% 100%, 60% 0%, 65% 100%, 70% 0%, 75% 100%, 80% 0%, 85% 100%, 90% 0%, 95% 100%, 100% 0%);
+    -webkit-clip-path: polygon(0% 0%, 5% 100%, 10% 0%, 15% 100%, 20% 0%, 25% 100%, 30% 0%, 35% 100%, 40% 0%, 45% 100%, 50% 0%, 55% 100%, 60% 0%, 65% 100%, 70% 0%, 75% 100%, 80% 0%, 85% 100%, 90% 0%, 95% 100%, 100% 0%);
+}
+
+
+.content-main .content-box:before {
+    background-color: #faa419;
+    top: 0;
+}
+
+.content-main .content-box:after {
+    background-color: #faa419;
+    bottom: -2px;
+    height: 2px;
+}
+
+.content-box h2 {
+    font-weight: 700;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    text-align: center;
+
+}
+
+.box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    padding: 0 5rem;
+
+}
+
+.yummybox {
+    /* border: 1px solid red; */
+    width: 250px;
+    height: auto;
+
+}
+
+
+.yummybox img {
+    width: 80px;
+    height: auto;
+}
+
+.yummybox h4 {
+    font-size: 20px;
+    font-weight: 700;
+    margin: 5px;
+}
+
+.yummybox p {
+    margin: 10px;
+    font-size: 12px;
+    text-align: center;
+    font-weight: 500;
+}
+
+
+
+/* How IT works css */
+.working {
+    background-color: #faa419;
+}
+
+.working h2 {
+    padding: 1rem;
+    text-align: center;
+    font-weight: 700;
+}
+
+.img-ext {
+    padding: 0;
+    margin: 0 1rem;
+    display: flex;
+    justify-content: center;
+}
+
+
+.working-card {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    padding: 2rem;
+    gap: 2rem;
+    margin: auto;
+
+}
+
+.working-card .card {
+    background-color: #faa419;
+    border: none;
+    width: 250px;
+    cursor: pointer;
+}
+
+.img-ext img {
+    width: 150px;
+    height: auto;
+}
+
+.working-card .card img {
+    width: 80px;
+    height: auto;
+    margin: auto;
+}
+
+.card small {
+    width: 50px;
+    margin: 6px auto;
+    background-color: #fff;
+    font-weight: 500;
+    border-radius: 40px;
+}
+
+.card h5 {
+    font-weight: 700;
+    margin: 4px auto;
+    font-size: 15px;
+}
+
+.card p {
+    font-weight: 500;
+    margin: 4px auto;
+    font-size: 14px;
+}
+
+
+@media only screen and (max-width: 1200px) {
+    .box {
+        padding: 0 1rem;
+
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    .content-box h2 {
+        font-size: 1.5rem;
+    }
+
+    .yummybox h4 {
+        font-size: 15px;
+        font-weight: 700;
+        margin: 5px;
+    }
+
+    .yummybox {
+        margin: 15px 0;
+    }
+
+    .box {
+        padding: 0 2rem;
+        flex-direction: column;
+    }
+
+    .working-card {
+        flex-direction: column;
+    }
+}
+
+@media only screen and (max-width: 420px) {
+    .content-box h2 {
+        font-size: 1.2rem;
+    }
+
+    .box {
+        padding: 0 1rem;
+    }
+
+    .yummybox {
+        margin: 10px 0;
+    }
+}
+
+
+
+/* Banner media query */
+@media only screen and (max-width: 1200px) {
+
+    .banner-txt {
+        top: 0;
+        left: 2rem;
+        margin-top: 18rem;
+    }
+
+    .banner-txt h1 {
+        font-size: 3.5rem;
+    }
+
+    .banner-txt h3 {
+        font-weight: 600;
+        font-size: 2rem;
+    }
+
+    .banner-txt h4 {
+        color: #faa419;
+    }
+
+    .banner-btn {
+        padding: 0.7rem 1.5rem;
+        font-weight: 700;
+        font-size: 1.5rem;
+        border-radius: 5px;
+    }
+}
+
+@media only screen and (max-width: 950px) {
+    .banner-txt {
+        top: 0;
+        left: 2rem;
+        margin-top: 15rem;
+    }
+
+    .banner-txt h1 {
+        font-size: 3rem;
+    }
+
+    .banner-txt h3 {
+        font-weight: 600;
+        font-size: 1.5rem;
+    }
+
+    .banner-txt h4 {
+        font-size: 1.3rem;
+
+    }
+
+    .banner-btn {
+        padding: 0.7rem 1.5rem;
+        font-weight: 700;
+        font-size: 1rem;
+        border-radius: 5px;
+    }
+}
+
+@media only screen and (max-width: 750px) {
+    .banner-txt {
+        top: 0;
+        left: 2rem;
+        margin-top: 14rem;
+    }
+
+    .banner-txt h3 {
+        font-weight: 600;
+        font-size: 1.2rem;
+    }
+
+    .banner-txt h1 {
+        font-size: 2rem;
+    }
+
+    .banner-txt h4 {
+        font-size: 1rem;
+    }
+
+    .banner-btn {
+        padding: 0.6rem 1rem;
+        font-weight: 700;
+        font-size: 0.5rem;
+        border-radius: 5px;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .banner-txt {
+        top: 0;
+        left: 1rem;
+        margin-top: 7rem;
+    }
+
+    .banner-txt h3 {
+        font-weight: 600;
+        font-size: 1rem;
+    }
+
+    .banner-txt h1 {
+        font-size: 1.5rem;
+    }
+
+    .banner-txt h4 {
+        font-size: 0.7rem;
+    }
+
+    .banner-btn {
+        padding: 0.6rem 1rem;
+        font-weight: 700;
+        font-size: 0.5rem;
+        border-radius: 5px;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .banner-txt {
+        top: 0;
+        left: 1rem;
+        margin-top: 7rem;
+    }
+
+    .banner-txt h3 {
+        font-weight: 600;
+        font-size: 0.8rem;
+    }
+
+    .banner-txt h1 {
+        font-size: 1.2rem;
+    }
+
+    .banner-txt h4 {
+        font-size: 0.5rem;
+    }
+
+    .banner-btn {
+        padding: 0.4rem 0.7rem;
+        font-size: 0.5rem;
+    }
+
+    .working-card {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
+    }
+
+    .working-card .card {
+        width: 150px;
+    }
+
+    .working-card .card img {
+        width: 70px;
+        height: auto;
+        margin: auto;
+    }
+
+    .card h5 {
+        font-weight: 700;
+        margin: 4px auto;
+        font-size: 15px;
+    }
+
+    .card p {
+        font-weight: 500;
+        margin: 4px auto;
+        font-size: 10px;
+    }
+    .img-ext img {
+    width: 66px;
+    height: auto;
+}
+}
+
+@media only screen and (max-width: 450px) {
+    .banner-txt {
+
+        margin-top: 7rem;
+    }
+
+    .banner-txt h3 {
+        font-weight: 600;
+        font-size: 0.8rem;
+    }
+
+    .banner-txt h1 {
+        font-size: 1.2rem;
+    }
+
+    .banner-txt h4 {
+        font-size: 0.6rem;
+    }
+
+    .banner-btn {
+        padding: 0.3rem 0.5rem;
+        font-size: 0.5rem;
+    }
+}
+
+@media only screen and (max-width: 350px) {
+    .banner-txt {
+
+        margin-top: 6rem;
+    }
+
+    .banner-txt h3 {
+        font-weight: 600;
+        font-size: 0.5rem;
+    }
+
+    .banner-txt h1 {
+        font-size: 1rem;
+    }
+
+    .banner-txt h4 {
+        font-size: 0.4rem;
+    }
+
+    .banner-btn {
+        padding: 0.3rem 0.5rem;
+        font-size: 0.5rem;
+    }
+}

@@ -1,0 +1,112 @@
+.footer-section {
+    background-color: #222222;
+    padding: 1rem;
+}
+
+.Footer-content {
+    display: flex;
+    padding: 1rem 1.5rem;
+    justify-content: center;
+    gap: 3rem;
+    color: white;
+}
+
+.Footer-content p {
+    margin: auto;
+    font-size: 13px;
+    margin: 10px;
+}
+
+.Footer-content p:hover {
+    color: #FAA419;
+    cursor: pointer;
+}
+
+.Footer-content h4 {
+    margin: 10px;
+    font-size: 1.3rem;
+}
+
+.footer-left p a {
+    color: #FAA419;
+}
+
+.footer-left .tel-numb {
+    color: #FAA419;
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.sub-footer {
+    display: flex;
+    justify-content: space-between;
+}
+
+.Copyright-sec {
+    color: white;
+    font-size: 12px;
+}
+
+.Copyright-sec img {
+    width: 50px;
+    height: auto;
+}
+
+.payment-sec img {
+    width: 100px;
+    height: auto;
+}
+
+
+/* Media Queries */
+@media only screen and (max-width: 900px) {
+    .footer-left .tel-numb {
+        font-size: 1rem;
+
+    }
+
+    .Footer-content p {
+        font-size: 10px;
+        margin: 8px;
+    }
+
+    .Footer-content h4 {
+        margin: 10px;
+        font-size: 1rem;
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    .footer-left .tel-numb {
+        font-size: 0.7rem;
+
+    }
+
+    .Footer-content p {
+        font-size: 8px;
+        margin: 6px;
+    }
+
+    .Footer-content h4 {
+        margin: 6px;
+        font-size: 0.8rem;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .Footer-content {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
+        padding: 1rem;
+    }
+
+    .sub-footer {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .Copyright-sec {
+        font-size: 8px;
+    }
+}
